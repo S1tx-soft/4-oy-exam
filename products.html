@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="tailwind.config.js">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title>Document</title>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-[#FBF8EC]">
+  <header>
+    <nav class="bg-[white]">
+      <div class="container max-w-[100%] w-[85%] mx-auto">
+        <div class="flex justify-between items-center py-[16px]">
+          <img src="img/logo (1).png" alt="Logo">
+          <button
+            class="w-[140px] py-[8px] items-center text-center flex gap-[9px]  border-[#70C05B] border-[2px] hover:w-[142px] 
+                 hover:py-[10px] hover:gap-[10px] hover:border-none hover:text-[white] hover:bg-[#70C05B] hover:text-[17px] ease-in-out duration-200 hover:ease-in-out hover:duration-200 font-[Rubik]">
+            <img class="w-[24px] h-[24px]" src="img/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
+              alt="Menu">Каталог</button>
+          <form action="">
+            <input
+              class="border-solid border-[#70C05B] border-[2px]  w-[504px] py-[8px] pl-[16px] relative font-[Rubik]"
+              type="text" placeholder="Найти товар">
+            <img class="w-[24px] h-[24px] absolute top-[27px] left-[1150px]"
+              src="img/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 (1).png" alt="search">
+          </form>
+          <a class="text-[12px] font-[400] hover:text-[14px] hover:text-[#FF6633] items-center text-center ease-in-out duration-200 hover:ease-in-out hover:duration-200 "
+            href=""><img class="w-[24px] h-[24px]" src="img/Frame 211 (3).png" alt="Products"> Заказы</a>
+          <a class="flex gap-[10px] items-center ease-in-out duration-200 hover:ease-in-out hover:duration-200 "
+            href=""><img src="img/avatar (1).png" alt="Avatar"> Менеджерн</a> <img src="img/Button.png" alt="Button">
+        </div>
+      </div>
+    </nav>
+    <div class="container max-w-[100%] w-[85%] mx-auto">
+      <div class="flex gap-[16px]  items-center py-[16px]">
+        <a class="items-center text-[12px] font-[400] text-[#8F8F8F] flex gap-[16px] hover:text-[13px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+          target="_blank" href="index.html">Главная <img class="w-[22px] h-[22px]"
+            src="img/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt="Arrow"></a>
+        <a class="text-[12px] font-[400] text-[#8F8F8F] hover:text-[13px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200 font-[Rubik]"
+          href="">Заказы</a>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <section>
+      <div class="container max-w-[100%] w-[85%] mx-auto">
+        <h1 class="font-[700] text-[64px] text-[#41414] font-[Rubik]">Заказы</h1> <img
+          class="absolute top-[134px] right-[1480px]" src="img/notice (1).png " alt="number">
+        <div class="flex gap-[16px] items-center py-[46px] ">
+          <button> <img class="w-[60px] h-[60px] p-[14px] bg-[#F3F2F1]"
+              src="img/calendar_today_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Calendar"></button>
+          <button
+            class="flex gap-[8px]  pl-[32px] items-center text-center py-[16px] bg-[#F3F2F1] w-[180px] text-[24px] font-[400] ease-in-out duration-200 hover:ease-in-out hover:duration-200
+                hover:font-[500] hover:text-[25px] hover:py-[17px] hover:q-[182px] hover:pl-[30 px] hover:text-[white] hover:bg-[#70C05B] font-[Rubik]">Сегодня
+            <img class="w-[32px] h-[32px]" src="img/notice (2).png" alt="notice"></button>
+          <button
+            class="flex gap-[8px]  pl-[32px] items-center text-center py-[16px] bg-[#F3F2F1] w-[180px] text-[24px] font-[400] ease-in-out duration-200 hover:ease-in-out hover:duration-200
+              hover:font-[500] hover:text-[25px] hover:py-[17px] hover:q-[182px] hover:pl-[30 px] hover:text-[white] hover:bg-[#70C05B] font-[Rubik]">1
+            апреля <img class="w-[26px] h-[32px]" src="img/notice (3).png" alt="notice"></button>
+          <button
+            class="flex gap-[8px]  pl-[32px] items-center text-center py-[16px] bg-[#F3F2F1] w-[180px] text-[24px] font-[400] ease-in-out duration-200 hover:ease-in-out hover:duration-200
+              hover:font-[500] hover:text-[25px] hover:py-[17px] hover:q-[182px] hover:pl-[30 px] hover:text-[white] hover:bg-[#70C05B] font-[Rubik]">5
+            апреля <img class="w-[23px] h-[32px]" src="img/notice (4).png" alt="notice"></button>
+        </div>
+
+      </div>
+
+    </section>
+    <section>
+      <div class="container max-w-[100%] w-[85%] mx-auto">
+        <div class="flex justify-between items-center py-[60px]">
+          <div class="flex gap-[16px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/Frame 211 (4).png" alt="Clock">
+            <h2 class="font-[700] text-[36px] font-[Rubik]">11:00</h2>
+          </div>
+          <div class="flex gap-[10px] items-center"><img class="w-[24px] h-[24px]"
+              src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Check">
+            <p class="font-[400] text-[24px]">5 / 5</p>
+          </div>
+
+        </div>
+        <div class="flex gap-[10px] items-center">
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[139px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200 
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[141px] ">Усть-Ижма
+            <img class="w-[24px] h-[24px]" src="img/notice (5).png" alt="Notice"></button>
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[139px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[141px] ">Галово
+            <img class="w-[24px] h-[24px]" src="img/notice (3).png" alt="Notice"></button>
+        </div>
+        <div class="flex justify-between items-center pt-[60px] pb-[60px]">
+          <div class="flex gap-[10px] items-center">
+            <h3 class="font-[Rubik] font-[700] text-[24px] pr-[26px]">355</h3>
+            <img class="w-[40px] h-[40px] " src="img/avatar.png" alt="Bilol">
+            <p class="font-[400] text-[16px] font-[Rubik]">Антон</p>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+            <p class="font-[400] text-[16px] font-[Rubik]">+7 912 888 77 55</p>
+            <select class="py-[8px] w-[200px]" name="Потверждено">
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#414141] bg-[#F3F2F1]"
+                value=""><img class="w-[24px] h-[24px]"
+                  src="img/shopping_bag_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Bag">Новый</option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#70C05B] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Tick">Собран
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#606060] bg-[#F3F2F1] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/local_shipping_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Delivery">Доставляется
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#008C49] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_circle_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Check cyrcle">Подтверждён
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#FCA21C] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/error_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Error">
+                Не подтвердили
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#D80000] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/warning_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Warning">Возврат
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#1CB9FC] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/home_24dp_414141_FILL0_wght400_GRAD200_opsz24.png"
+                  alt="Home">Вернули
+              </option>
+
+            </select>
+            <button
+              class="w-[190px] py-[11.5px] flex gap-[12px] items-center text-center bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[192px] hover:py-[12px]  ">
+              <img class="w-[24px] h-[24px]" src="img/visibility_24dp_606060_FILL0_wght400_GRAD200_opsz24.png"
+                alt="Eye"> Просмотреть</button>
+            <button class="w-[40px]    p-[10px] items-center bg-[#F3F2F1] "><img class="w-[24px] h-[24px] relative"
+                src="img/comment_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Comment"></button>
+          </div>
+        </div>
+        <div class="flex justify-between items-center pt-[60px] pb-[60px]">
+          <div class="flex gap-[10px] items-center">
+            <h3 class="font-[Rubik] font-[700] text-[24px] pr-[26px]">222</h3>
+            <img class="w-[40px] h-[40px] " src="img/avatar.png" alt="Bilol">
+            <p class="font-[400] text-[16px] font-[Rubik]">Дмитрий</p>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+            <p class="font-[400] text-[16px] font-[Rubik]">+7 912 888 77 55</p>
+            <select class="py-[8px] w-[200px]" name="Потверждено">
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#414141] bg-[#F3F2F1]"
+                value=""><img class="w-[24px] h-[24px]"
+                  src="img/shopping_bag_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Bag">Новый</option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#70C05B] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Tick">Собран
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#606060] bg-[#F3F2F1] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/local_shipping_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Delivery">Доставляется
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#008C49] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_circle_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Check cyrcle">Подтверждён
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#FCA21C] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/error_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Error">
+                Не подтвердили
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#D80000] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/warning_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Warning">Возврат
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#1CB9FC] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/home_24dp_414141_FILL0_wght400_GRAD200_opsz24.png"
+                  alt="Home">Вернули
+              </option>
+
+            </select>
+            <button
+              class="w-[190px] py-[11.5px] flex gap-[12px] items-center text-center bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[192px] hover:py-[12px]  ">
+              <img class="w-[24px] h-[24px]" src="img/visibility_24dp_606060_FILL0_wght400_GRAD200_opsz24.png"
+                alt="Eye"> Просмотреть</button>
+            <button class="w-[40px]    p-[10px] items-center bg-[#F3F2F1] "><img class="w-[24px] h-[24px] relative"
+                src="img/comment_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Comment"></button>
+          </div>
+        </div>
+        <div class="flex justify-between items-center pt-[60px] pb-[120px]">
+          <div class="flex gap-[10px] items-center">
+            <h3 class="font-[Rubik] font-[700] text-[24px] pr-[26px]">134</h3>
+            <img class="w-[40px] h-[40px] " src="img/avatar.png" alt="Bilol">
+            <p class="font-[400] text-[16px] font-[Rubik]">Дмитрий</p>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+            <p class="font-[400] text-[16px] font-[Rubik]">+7 912 888 77 55</p>
+            <select class="py-[8px] w-[200px]" name="Потверждено">
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#414141] bg-[#F3F2F1]"
+                value=""><img class="w-[24px] h-[24px]"
+                  src="img/shopping_bag_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Bag">Новый</option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#70C05B] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Tick">Собран
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#606060] bg-[#F3F2F1] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/local_shipping_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Delivery">Доставляется
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#008C49] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_circle_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Check cyrcle">Подтверждён
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#FCA21C] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/error_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Error">
+                Не подтвердили
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#D80000] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/warning_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Warning">Возврат
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#1CB9FC] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/home_24dp_414141_FILL0_wght400_GRAD200_opsz24.png"
+                  alt="Home">Вернули
+              </option>
+
+            </select>
+            <button
+              class="w-[190px] py-[11.5px] flex gap-[12px] items-center text-center bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[192px] hover:py-[12px]  ">
+              <img class="w-[24px] h-[24px]" src="img/visibility_24dp_606060_FILL0_wght400_GRAD200_opsz24.png"
+                alt="Eye"> Просмотреть</button>
+            <form action="">
+              <button class="w-[40px]    p-[10px] items-center bg-[#F3F2F1] "><img class="w-[24px] h-[24px] relative"
+                  src="img/chat_bubble_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Comment"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container max-w-[100%] w-[85%] mx-auto">
+        <div class="flex justify-between items-center py-[60px]">
+          <div class="flex gap-[16px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/Frame 211 (4).png" alt="Clock">
+            <h2 class="font-[700] text-[36px] font-[Rubik]">14:00</h2>
+          </div>
+          <div class="flex gap-[10px] items-center"><img class="w-[24px] h-[24px]"
+              src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Check">
+            <p class="font-[400] text-[24px]">8 / 8</p>
+          </div>
+
+        </div>
+        <div class="flex gap-[10px] items-center">
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[139px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200 
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[141px] ">Усть-Ижма
+            <img class="w-[24px] h-[24px]" src="img/notice (5).png" alt="Notice"></button>
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[139px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[141px] ">Галово
+            <img class="w-[24px] h-[24px]" src="img/notice (3).png" alt="Notice"></button>
+        </div>
+        <div class="flex justify-between items-center pt-[60px] pb-[60px]">
+          <div class="flex gap-[10px] items-center">
+            <h3 class="font-[Rubik] font-[700] text-[24px] pr-[26px]">855</h3>
+            <img class="w-[40px] h-[40px] " src="img/avatar.png" alt="Bilol">
+            <p class="font-[400] text-[16px] font-[Rubik]">Антон</p>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+            <p class="font-[400] text-[16px] font-[Rubik]">+7 912 888 77 55</p>
+            <select class="py-[8px] w-[200px]" name="Потверждено">
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#414141] bg-[#F3F2F1]"
+                value=""><img class="w-[24px] h-[24px]"
+                  src="img/shopping_bag_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Bag">Новый</option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#70C05B] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Tick">Собран
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#606060] bg-[#F3F2F1] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/local_shipping_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Delivery">Доставляется
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#008C49] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_circle_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Check cyrcle">Подтверждён
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#FCA21C] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/error_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Error">
+                Не подтвердили
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#D80000] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/warning_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Warning">Возврат
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#1CB9FC] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/home_24dp_414141_FILL0_wght400_GRAD200_opsz24.png"
+                  alt="Home">Вернули
+              </option>
+
+            </select>
+            <button
+              class="w-[190px] py-[11.5px] flex gap-[12px] items-center text-center bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[192px] hover:py-[12px]  ">
+              <img class="w-[24px] h-[24px]" src="img/visibility_24dp_606060_FILL0_wght400_GRAD200_opsz24.png"
+                alt="Eye"> Просмотреть</button>
+            <button class="w-[40px]    p-[10px] items-center bg-[#F3F2F1] "><img class="w-[24px] h-[24px] relative"
+                src="img/comment_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Comment"></button>
+          </div>
+        </div>
+        <div class="flex justify-between items-center pt-[60px] pb-[60px]">
+          <div class="flex gap-[10px] items-center">
+            <h3 class="font-[Rubik] font-[700] text-[24px] pr-[26px]">543</h3>
+            <img class="w-[40px] h-[40px] " src="img/avatar.png" alt="Bilol">
+            <p class="font-[400] text-[16px] font-[Rubik]">Дмитрий</p>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+            <p class="font-[400] text-[16px] font-[Rubik]">+7 912 888 77 55</p>
+            <select class="py-[8px] w-[200px]" name="Потверждено">
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#414141] bg-[#F3F2F1]"
+                value=""><img class="w-[24px] h-[24px]"
+                  src="img/shopping_bag_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Bag">Новый</option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#70C05B] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Tick">Собран
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#606060] bg-[#F3F2F1] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/local_shipping_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Delivery">Доставляется
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#008C49] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_circle_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Check cyrcle">Подтверждён
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#FCA21C] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/error_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Error">
+                Не подтвердили
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#D80000] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/warning_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Warning">Возврат
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#1CB9FC] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/home_24dp_414141_FILL0_wght400_GRAD200_opsz24.png"
+                  alt="Home">Вернули
+              </option>
+
+            </select>
+            <button
+              class="w-[190px] py-[11.5px] flex gap-[12px] items-center text-center bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[192px] hover:py-[12px]  ">
+              <img class="w-[24px] h-[24px]" src="img/visibility_24dp_606060_FILL0_wght400_GRAD200_opsz24.png"
+                alt="Eye"> Просмотреть</button>
+            <button class="w-[40px]    p-[10px] items-center bg-[#F3F2F1] "><img class="w-[24px] h-[24px] relative"
+                src="img/calendar_today_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Comment"></button>
+          </div>
+        </div>
+        <div class="flex justify-between items-center pt-[60px] pb-[60px]">
+          <div class="flex gap-[10px] items-center">
+            <h3 class="font-[Rubik] font-[700] text-[24px] pr-[26px]">756</h3>
+            <img class="w-[40px] h-[40px] " src="img/avatar.png" alt="Bilol">
+            <p class="font-[400] text-[16px] font-[Rubik]">Дмитрий</p>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+            <p class="font-[400] text-[16px] font-[Rubik]">+7 912 888 77 55</p>
+            <select class="py-[8px] w-[200px]" name="Потверждено">
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#414141] bg-[#F3F2F1]"
+                value=""><img class="w-[24px] h-[24px]"
+                  src="img/shopping_bag_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Bag">Новый</option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#70C05B] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Tick">Собран
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#606060] bg-[#F3F2F1] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/local_shipping_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Delivery">Доставляется
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#008C49] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_circle_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Check cyrcle">Подтверждён
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#FCA21C] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/error_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Error">
+                Не подтвердили
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#D80000] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/warning_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Warning">Возврат
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#1CB9FC] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/home_24dp_414141_FILL0_wght400_GRAD200_opsz24.png"
+                  alt="Home">Вернули
+              </option>
+
+            </select>
+            <button
+              class="w-[190px] py-[11.5px] flex gap-[12px] items-center text-center bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[192px] hover:py-[12px]  ">
+              <img class="w-[24px] h-[24px]" src="img/visibility_24dp_606060_FILL0_wght400_GRAD200_opsz24.png"
+                alt="Eye"> Просмотреть</button>
+            <button class="w-[40px]    p-[10px] items-center bg-[#F3F2F1] "><img class="w-[24px] h-[24px] relative"
+                src="img/calendar_today_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Comment"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container max-w-[100%] w-[85%] mx-auto">
+        <div class="flex justify-between items-center py-[60px]">
+          <div class="flex gap-[16px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/Frame 211 (4).png" alt="Clock">
+            <h2 class="font-[700] text-[36px] font-[Rubik]">18:00</h2>
+          </div>
+          <div class="flex gap-[10px] items-center"><img class="w-[24px] h-[24px]"
+              src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Check">
+            <p class="font-[400] text-[24px]">1 / 2</p>
+          </div>
+
+        </div>
+        <button
+          class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[139px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200 
+       hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[141px] ">Усть-Ижма
+          <img class="w-[24px] h-[24px]" src="img/notice (5).png" alt="Notice"></button>
+        <div class="flex justify-between items-center pt-[60px] pb-[60px]">
+          <div class="flex gap-[10px] items-center">
+            <h3 class="font-[Rubik] font-[700] text-[24px] pr-[26px]">321</h3>
+            <img class="w-[40px] h-[40px] " src="img/avatar.png" alt="Bilol">
+            <p class="font-[400] text-[16px] font-[Rubik]">Антон</p>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+            <p class="font-[400] text-[16px] font-[Rubik]">+7 912 888 77 55</p>
+            <select class="py-[8px] w-[200px]" name="Потверждено">
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#414141] bg-[#F3F2F1]"
+                value=""><img class="w-[24px] h-[24px]"
+                  src="img/shopping_bag_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Bag">Новый</option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#70C05B] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Tick">Собран
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#606060] bg-[#F3F2F1] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/local_shipping_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Delivery">Доставляется
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#008C49] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_circle_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Check cyrcle">Подтверждён
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#FCA21C] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/error_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Error">
+                Не подтвердили
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#D80000] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/warning_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Warning">Возврат
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#1CB9FC] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/home_24dp_414141_FILL0_wght400_GRAD200_opsz24.png"
+                  alt="Home">Вернули
+              </option>
+
+            </select>
+            <button
+              class="w-[190px] py-[11.5px] flex gap-[12px] items-center text-center bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[192px] hover:py-[12px]  ">
+              <img class="w-[24px] h-[24px]" src="img/visibility_24dp_606060_FILL0_wght400_GRAD200_opsz24.png"
+                alt="Eye"> Просмотреть</button>
+            <button class="w-[40px]    p-[10px] items-center bg-[#F3F2F1] "><img class="w-[24px] h-[24px] relative"
+                src="img/comment_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Comment"></button>
+          </div>
+        </div>
+        <div class="flex justify-between items-center pt-[60px] pb-[60px]">
+          <div class="flex gap-[10px] items-center">
+            <h3 class="font-[Rubik] font-[700] text-[24px] pr-[26px]">421</h3>
+            <img class="w-[40px] h-[40px] " src="img/avatar.png" alt="Bilol">
+            <p class="font-[400] text-[16px] font-[Rubik]">Дмитрий</p>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+            <p class="font-[400] text-[16px] font-[Rubik]">+7 912 888 77 55</p>
+            <select class="py-[8px] w-[200px]" name="Потверждено">
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#414141] bg-[#F3F2F1]"
+                value=""><img class="w-[24px] h-[24px]"
+                  src="img/shopping_bag_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Bag">Новый</option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#70C05B] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Tick">Собран
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#606060] bg-[#F3F2F1] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/local_shipping_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Delivery">Доставляется
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#008C49] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_circle_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Check cyrcle">Подтверждён
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#FCA21C] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/error_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Error">
+                Не подтвердили
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#D80000] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/warning_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Warning">Возврат
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                     hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#1CB9FC] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/home_24dp_414141_FILL0_wght400_GRAD200_opsz24.png"
+                  alt="Home">Вернули
+              </option>
+
+            </select>
+            <button
+              class="w-[190px] py-[11.5px] flex gap-[12px] items-center text-center bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[192px] hover:py-[12px]  ">
+              <img class="w-[24px] h-[24px]" src="img/visibility_24dp_606060_FILL0_wght400_GRAD200_opsz24.png"
+                alt="Eye"> Просмотреть</button>
+            <button class="w-[40px]    p-[10px] items-center bg-[#F3F2F1] "><img class="w-[24px] h-[24px] relative"
+                src="img/comment_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Comment"></button>
+          </div>
+        </div>
+        <div class="flex justify-between items-center ">
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/img (4).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Снеки</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/image (13).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Снеки</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/image (14).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Снеки</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+        </div>
+        <button
+          class="w-[200px] py-[11.5px] mt-[40px] mb-[80px] flex justify-center mx-auto gap-[12px] items-center text-center  bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[202px] hover:py-[12px]  ">
+          <img class="w-[24px] h-[24px]" src="img/visibility_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Eye">
+          Просмотреть заказ</button>
+
+      </div>
+    </section>
+    <section>
+      <div class="container max-w-[100%] w-[85%] mx-auto">
+        <div class="flex justify-between items-center py-[60px]">
+          <div class="flex gap-[16px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/Frame 211 (4).png" alt="Clock">
+            <h2 class="font-[700] text-[36px] font-[Rubik]">20:00</h2>
+          </div>
+          <div class="flex gap-[10px] items-center"><img class="w-[24px] h-[24px]"
+              src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Check">
+            <p class="font-[400] text-[24px]">1 / 1</p>
+          </div>
+
+        </div>
+        <div class="flex justify-between items-center pt-[16px] pb-[60px]">
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[139px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200 
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[141px] rounded-[5px] hover:rouded-[3px] ">Усть-Ижма
+            <img class="w-[24px] h-[24px]" src="img/notice (5).png" alt="Notice"></button>
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[102px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[105px] rounded-[5px] hover:rouded-[3px] ">Галово
+            <img class="w-[24px] h-[24px]" src="img/notice (3).png" alt="Notice"></button>
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[124px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[126px] rounded-[5px] hover:rouded-[3px] ">Кельчиюр
+            <img class="w-[24px] h-[24px]" src="img/notice (3).png" alt="Notice"></button>
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[102px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[105px] rounded-[5px] hover:rouded-[3px] ">Галово
+            <img class="w-[24px] h-[24px]" src="img/notice (3).png" alt="Notice"></button>
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[105px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[105px] rounded-[5px] hover:rouded-[3px] ">Вертеп
+            <img class="w-[24px] h-[24px]" src="img/notice (3).png" alt="Notice"></button>
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[133px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[135px] rounded-[5px] hover:rouded-[3px] ">Краснобор
+            <img class="w-[24px] h-[24px]" src="img/notice (3).png" alt="Notice"></button>
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[93px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[95px] rounded-[5px] hover:rouded-[3px] ">Диюр
+            <img class="w-[24px] h-[24px]" src="img/notice (3).png" alt="Notice"></button>
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[126px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[128px] rounded-[5px] hover:rouded-[3px] ">Ыргеншар
+            <img class="w-[24px] h-[24px]" src="img/notice (3).png" alt="Notice"></button>
+          <button
+            class=" flex gap-[8px] items-center text-center text-[16px] font-[400] font-[Rubik] w-[126px] py-[8px] pl-[8px] text-[#606060] bg-[#F3F2F1]  ease-in-out duration-200 hover:ease-in-out hover:duration-200
+           hover:text-[17px] hover:font-[500] hover:py-[9px] hover:text-[white] hover:bg-[#70C05B] hover:pl-[9px] hover:w-[128px] rounded-[5px] hover:rouded-[3px] ">Щельяюр
+            <img class="w-[24px] h-[24px]" src="img/notice (3).png" alt="Notice"></button>
+        </div>
+        <div class="flex justify-between items-center pt-[60px] pb-[60px]">
+          <div class="flex gap-[10px] items-center">
+            <h3 class="font-[Rubik] font-[700] text-[24px] pr-[26px]">421</h3>
+            <img class="w-[40px] h-[40px] " src="img/avatar.png" alt="Bilol">
+            <p class="font-[400] text-[16px] font-[Rubik]">Дмитрий</p>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+            <p class="font-[400] text-[16px] font-[Rubik] border-b-[1px] border-[#414141]">+7 912 888 77 55</p>
+            <select class="py-[8px] w-[200px]" name="Потверждено">
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#414141] bg-[#F3F2F1]"
+                value=""><img class="w-[24px] h-[24px]"
+                  src="img/shopping_bag_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Bag">Новый</option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#70C05B] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Tick">Собран
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#606060] bg-[#F3F2F1] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/local_shipping_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Delivery">Доставляется
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#008C49] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_circle_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Check cyrcle">Подтверждён
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#FCA21C] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/error_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Error">
+                Не подтвердили
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#D80000] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/warning_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Warning">Возврат
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#1CB9FC] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/home_24dp_414141_FILL0_wght400_GRAD200_opsz24.png"
+                  alt="Home">Вернули
+              </option>
+
+            </select>
+            <button class="w-[190px] py-[11.5px] flex gap-[12px] items-center text-center bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[192px] 
+              hover:py-[12px] hover:bg-[#FF6633] rounded-[5px] hover:rounded-[3px]  ">
+              <img class="w-[24px] h-[24px]"
+                src="img/upload_2_24dp_FFF_FILL0_wght400_GRAD200_opsz24.png" alt="Upload"> Выгрузить в 1с</button>
+            <button class="w-[40px]    p-[10px] items-center bg-[#F3F2F1] "><img class="w-[24px] h-[24px] relative"
+                src="img/comment_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Comment"></button>
+          </div>
+
+        </div>
+        <div class="flex justify-between items-center pt-[40px] pb-[60px] ">
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/image (14).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Колбасы</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/img (4).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Колбасы</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/img (5).png" alt="Moloko">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Молоко, сыр, яйцо</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/img (6).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Снеки</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container max-w-[100%] w-[85%] mx-auto">
+        <div class="flex justify-between items-center pt-[60px] pb-[60px]">
+          <div class="flex gap-[10px] items-center">
+            <h3 class="font-[Rubik] font-[700] text-[24px] pr-[26px]">232</h3>
+            <img class="w-[40px] h-[40px] " src="img/avatar.png" alt="Bilol">
+            <p class="font-[400] text-[16px] font-[Rubik]">Дмитрий</p>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+            <p class="font-[400] text-[16px] font-[Rubik] border-b-[1px] border-[#414141]">+7 912 888 77 55</p>
+            <select class="py-[8px] w-[200px]" name="Потверждено">
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#414141] bg-[#F3F2F1]"
+                value=""><img class="w-[24px] h-[24px]"
+                  src="img/shopping_bag_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Bag">Новый</option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#70C05B] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Tick">Собран
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#606060] bg-[#F3F2F1] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/local_shipping_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Delivery">Доставляется
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#008C49] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_circle_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Check cyrcle">Подтверждён
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#FCA21C] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/error_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Error">
+                Не подтвердили
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#D80000] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/warning_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Warning">Возврат
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#1CB9FC] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/home_24dp_414141_FILL0_wght400_GRAD200_opsz24.png"
+                  alt="Home">Вернули
+              </option>
+
+            </select>
+            <button class="w-[190px] py-[11.5px] flex gap-[12px] items-center text-center bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[192px] 
+              hover:py-[12px] hover:bg-[#FF6633] rounded-[5px] hover:rounded-[3px]  ">
+              <img class="w-[24px] h-[24px]"
+                src="img/upload_2_24dp_FFF_FILL0_wght400_GRAD200_opsz24.png" alt="Upload"> Выгрузить в 1с</button>
+            <button class="w-[40px]    p-[10px] items-center bg-[#F3F2F1] "><img class="w-[24px] h-[24px] relative"
+                src="img/comment_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Comment"></button>
+          </div>
+
+        </div>
+        <div class="flex justify-between items-center pt-[40px] pb-[60px] ">
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/img (4).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Колбасы</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/img (6).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Снеки</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/image (14).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Колбасы</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/img (5).png" alt="Moloko">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Молоко, сыр, яйцо</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+        
+        </div>
+        <button
+          class="w-[200px] py-[11.5px] mt-[40px] mb-[80px] flex justify-center mx-auto gap-[12px] items-center text-center  bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[202px] hover:py-[12px]  ">
+          <img class="w-[24px] h-[24px]" src="img/visibility_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Eye">
+          Просмотреть заказ</button>  
+      </div>
+    </section>
+    <section>
+      <div class="container max-w-[100%] w-[85%] mx-auto">
+        <div class="flex justify-between items-center pt-[60px] pb-[60px]">
+          <div class="flex gap-[10px] items-center">
+            <h3 class="font-[Rubik] font-[700] text-[24px] pr-[26px]">512</h3>
+            <img class="w-[40px] h-[40px] " src="img/avatar.png" alt="Bilol">
+            <p class="font-[400] text-[16px] font-[Rubik]">Дмитрий</p>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img class="w-[24px] h-[24px]" src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+            <p class="font-[400] text-[16px] font-[Rubik] border-b-[1px] border-[#414141]">+7 912 888 77 55</p>
+            <select class="py-[8px] w-[200px]" name="Потверждено">
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#414141] bg-[#F3F2F1]"
+                value=""><img class="w-[24px] h-[24px]"
+                  src="img/shopping_bag_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Bag">Новый</option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#70C05B] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Tick">Собран
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[#606060] bg-[#F3F2F1] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/local_shipping_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Delivery">Доставляется
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#008C49] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/check_circle_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Check cyrcle">Подтверждён
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#FCA21C] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/error_24dp_414141_FILL0_wght400_GRAD0_opsz24.png" alt="Error">
+                Не подтвердили
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#D80000] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/warning_24dp_414141_FILL0_wght400_GRAD0_opsz24.png"
+                  alt="Warning">Возврат
+              </option>
+              <option
+                class=" text-[16px] font-[400] font-[Rubik] flex gap-[4px] ease-in-out duration-200 
+                       hover:ease-in-out hover:duration-200 hover:text-[17px] hover:font-[500] text-[white] bg-[#1CB9FC] "
+                value="">
+                <img class="w-[24px] h-[24px]" src="img/home_24dp_414141_FILL0_wght400_GRAD200_opsz24.png"
+                  alt="Home">Вернули
+              </option>
+
+            </select>
+            <button class="w-[190px] py-[11.5px] flex gap-[12px] items-center text-center bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[192px] 
+              hover:py-[12px] hover:bg-[#FF6633] rounded-[5px] hover:rounded-[3px]  ">
+              <img class="w-[24px] h-[24px]"
+                src="img/upload_2_24dp_FFF_FILL0_wght400_GRAD200_opsz24.png" alt="Upload"> Выгрузить в 1с</button>
+            <button class="w-[40px]    p-[10px] items-center bg-[#F3F2F1] "><img class="w-[24px] h-[24px] relative"
+                src="img/comment_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Comment"></button>
+          </div>
+
+        </div>
+        <div class="flex justify-between items-center pt-[40px] pb-[60px] ">
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/img (4).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Колбасы</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/img (6).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Снеки</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/image (14).png" alt="Kolbasa">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Колбасы</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+          <div class="bg-[#FFFFFF] w-[272px] p-[8px]   flex flex-col gap-[8px]">
+            <img class="w-[272px] h-[160px]" src="img/img (5).png" alt="Moloko">
+            <p class="text-[12px] font-[400] font-[Rubik] text-left">Молоко, сыр, яйцо</p>
+            <p class="w-[200px] text-left text-[16px] font-[400] font-[Rubik]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+          </div>
+        
+        </div>
+        <button
+          class="w-[200px] py-[11.5px] mt-[40px] mb-[80px] flex justify-center mx-auto gap-[12px] items-center text-center  bg-[#F3F2F1] TEXT-[16px] font-[400] font-[Rubik] ease-in-out duration-200 hover:ease-in-out hover:duration-200 pl-[12px] hover:w-[202px] hover:py-[12px]  ">
+          <img class="w-[24px] h-[24px]" src="img/visibility_24dp_606060_FILL0_wght400_GRAD200_opsz24.png" alt="Eye">
+          Просмотреть заказ</button>  
+      </div>
+    </section>  
+  </main>
+  <footer class="bg-[#F9F4E2]">
+    <div class="container max-w-[100%] w-[85%] mx-auto">
+      <div class="flex justify-between items-center pt-[24px] pb-[58px] ">
+        <img src="img/logo (2).png" alt="Logo">
+        <ul class="flex items-center gap-[40px]">
+          <li><a
+              class="text-[12px] font-[400] text-[#414141] hover:text-[14px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+              href="">О компании</a></li>
+          <li><a
+              class="text-[12px] font-[400] text-[#414141] hover:text-[14px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+              href="">Контакты</a></li>
+          <li><a
+              class="text-[12px] font-[400] text-[#414141] hover:text-[14px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+              href="">Вакансии</a></li>
+          <li><a
+              class="text-[12px] font-[400] text-[#414141] hover:text-[14px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+              href="">Статьи</a></li>
+          <li><a
+              class="text-[12px] font-[400] text-[#414141] hover:text-[14px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+              href="">Политика обработки персональных данных</a></li>
+        </ul>
+        <ul class="flex items-center gap-[16px]">
+          <li><img class="w-[24px] h[24px]"
+              src="https://img.freepik.com/premium-vector/instagram-vector-logo-icon-social-media-logotype_901408-392.jpg?semt=ais_hybrid"
+              alt="Insagram"></li>
+          <li><img class="w-[24px] h[24px]"
+              src="https://w7.pngwing.com/pngs/814/360/png-transparent-vk-chat-logo-social-social-media-social-media-logos-icon-thumbnail.png"
+              alt="VK"></li>
+          <li><img class="w-[30px] h-[23px]" src="https://banner2.cleanpng.com/20180713/huy/aawa951nk.webp"
+              alt="Facebook"></li>
+          <li><img class="w-[24px] h[24px]"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Odnoklassniki.svg/1200px-Odnoklassniki.svg.png"
+              alt="OK"></li>
+        </ul>
+        <div class="flex items-center gap-[8px]">
+          <img class="w-[24px] h-[24px] " src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+          <p class="text-[16px] font-[400]">8 800 777 33 33</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

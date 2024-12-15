@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind.config.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="bg-[#FBF8EC]">
+    <header>
+        <nav>
+            <div class="container max-w-[100%] w-[85%] mx-auto">
+                <div class=" flex justify-between items-center py-[16px]">
+                    <img src="img/logo (1).png" alt="Logo">
+                    <button
+                        class=" flex gap-[8px] items-center py-[8px] w-[140px] text-center hover:bg-[#70C05B] hover:text-center hover:items-center hover:text-[white] ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                        <img class="w-[24px] h-[24px]" src="img/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png "
+                            alt="Menu">Каталог</button>
+                    <form class="flex items-center relative">
+                        <input class="border-solid border-[#70C05B] border-[2px]  w-[375px] py-[8px] pl-[16px] relative"
+                            type="text" placeholder="Найти товар">
+                        <img class="w-[24px] h-[24px] absolute top-[11px] left-[340px]"
+                            src="img/search_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 (1).png" alt="search">
+                    </form>
+                    <ul class="flex gap-[24px] items-center">
+                        <li class=" flex flex-col gap-[8px] items-center"><img class=" w-[24px] h-[24px]"
+                                src="img/Frame 211 (2).png" alt="Main"><a
+                                class="font-[400] text-[12px] text-[#414141] hover:font-[450] hover:text-[black] hover:text-[13px] ease-in-out duration-200 hover:ease-in-out hover:duration-200 "
+                                href="">Избранное</a></li>
+                        <li class=" flex flex-col gap-[8px] items-center"><img class=" w-[24px] h-[24px]"
+                                src="img/Frame 211 (1).png" alt="Zakzazi"><a
+                                class="font-[400] text-[12px] text-[#414141] hover:font-[450] hover:text-[black] hover:text-[13px] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+                                target="_blank" href="products.html">Заказы</a></li>
+                        <li class=" flex flex-col gap-[8px] items-center"><img class=" w-[24px] h-[24px]"
+                                src="img/Frame 211.png" alt="Korzinka"><a
+                                class="font-[400] text-[12px] text-[#414141] hover:font-[450] hover:text-[black] hover:text-[13px] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+                                href="">Корзина</a></li>
+                    </ul>
+                    <div class="flex items-center gap-[10px]">
+                        <img src="img/avatar.png" alt="Bilol">
+                        <h2 class="text-[16px] text-[400] after: block ">Алексей</h2>
+                        <img class="W-[24PX] h-[24px]" src="img/Button.png" alt="Bn">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <img class="w-[100%] h-[280px] py-[15px] " src="img/Sliders.png" alt="Reklama">
+        </div>
+        <section>
+            <div class="container max-w-[100%] w-[85%] mx-auto">
+                <div class="flex justify-between items-center pt-[80px]">
+                    <h2 class="text-[36px] font-[700] ">Акции</h2>
+                    <a data-aos="fade-down"
+                        class="text-[16px] font-[400] flex gap-[8px] text-[#757371] hover:text-[18px] hover:text-[black] "
+                        href="">Все акции <img class="w-[24px] h-[24px]"
+                            src="img/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+                </div>
+                <div class=" flex justify-between items-center pt-[40px] pb-[120px]">
+                    <div data-aos="flip-right" class="bg-[white] py-[8px] px-[8px]">
+                        <img src="img/img.png" alt="Blinchiki">
+
+                        <ul class="flex justify-between items-center">
+                            <li>
+                                <h3 class="text-[18px] font-[700]">44,50 ₽</h3>
+                                <p class="text-[12px] font-[400] text-[#BFBFBF]">С картой</p>
+                            </li>
+                            <li>
+                                <h3 class="text-[18px] font-[400]">50,50 ₽</h3>
+                                <p class="text-[12px] font-[400] text-[#BFBFBF]">Обычная</p>
+                            </li>
+                        </ul>
+                        <p class="w-[250px]">Г/Ц Блинчики с мясом вес, Россия</p>
+                        <img class="py-[8px]" src="img/rating.png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                            В корзину</button>
+                    </div>
+                    <div data-aos="flip-right" class="bg-[white] py-[8px] px-[8px]">
+                        <img src="img/img (1).png" alt="Moloko">
+
+                        <ul class="flex justify-between items-center">
+                            <li>
+                                <h3 class="text-[18px] font-[700]">44,50 ₽</h3>
+                                <p class="text-[12px] font-[400] text-[#BFBFBF]">С картой</p>
+                            </li>
+                            <li>
+                                <h3 class="text-[18px] font-[400]">50,50 ₽</h3>
+                                <p class="text-[12px] font-[400] text-[#BFBFBF]">Обычная</p>
+                            </li>
+                        </ul>
+                        <p class="w-[250px]">Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</p>
+                        <img class="py-[8px]" src="img/rating (1).png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                            В корзину</button>
+                    </div>
+                    <div data-aos="flip-left" class="bg-[white] py-[8px] px-[8px]">
+                        <img src="img/image (9).png" alt="Kolbasa">
+
+                        <ul class="flex justify-between items-center">
+                            <li>
+                                <h3 class="text-[18px] font-[700]">44,50 ₽</h3>
+                                <p class="text-[12px] font-[400] text-[#BFBFBF]">С картой</p>
+                            </li>
+                            <li>
+                                <h3 class="text-[18px] font-[400]">50,50 ₽</h3>
+                                <p class="text-[12px] font-[400] text-[#BFBFBF]">Обычная</p>
+                            </li>
+                        </ul>
+                        <p class="w-[250px]">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</p>
+                        <img class="py-[8px]" src="img/rating (2).png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none  ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                            В корзину</button>
+                    </div>
+                    <div data-aos="flip-left" class="bg-[white] py-[8px] px-[8px]">
+                        <img src="img/image (10).png" alt="Sosiski">
+
+                        <ul class="flex justify-between items-center">
+                            <li>
+                                <h3 class="text-[18px] font-[700]">44,50 ₽</h3>
+                                <p class="text-[12px] font-[400] text-[#BFBFBF]">С картой</p>
+                            </li>
+                            <li>
+                                <h3 class="text-[18px] font-[400]">50,50 ₽</h3>
+                                <p class="text-[12px] font-[400] text-[#BFBFBF]">Обычная</p>
+                            </li>
+                        </ul>
+                        <p class="w-[250px]">Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыром...</p>
+                        <img class="py-[8px]" src="img/rating (3).png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                            В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container max-w-[100%] w-[85%] mx-auto">
+                <div class="flex justify-between items-center pt-[80px] ">
+                    <h2 class="text-[36px] font-[700] font-['Rubik']">Новинки</h2>
+                    <a data-aos="fade-down"
+                        class="text-[16px] font-[400] flex gap-[8px] text-[#757371] hover:text-[18px] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200 "
+                        href="">Все новинки <img class="w-[24px] h-[24px]"
+                            src="img/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+                </div>
+                <div class="flex justify-between items-center pt-[40px] pb-[120px]">
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="bg-[white] p-[8px]">
+                        <img src="img/image (11).png" alt="Kolbasa">
+                        <h2 class="font-[700] text-[18px] pt-[8px] pb-[18px]">599,99 ₽</h2>
+                        <p class="text-[16px] font-[400] w-[200px] pt-[26px] pb-[8px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ
+                            GS12»</p>
+                        <img class="pb-[8px]" src="img/rating.png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                            В корзину</button>
+                    </div>
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="bg-[white] p-[8px]">
+                        <img src="img/image (9).png" alt="Kolbasa">
+                        <h2 class="font-[700] text-[18px] pt-[8px] pb-[18px]">44,50 ₽</h2>
+                        <p class="text-[16px] font-[400] w-[256px] pt-[26px] pb-[8px]">Колбаса сырокопченая МЯСНАЯ
+                            ИСТОРИЯ Сальчичон и Тоскан...</p>
+                        <img class="pb-[8px]" src="img/rating (2).png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                            В корзину</button>
+                    </div>
+                    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="bg-[white] p-[8px]">
+                        <img src="img/image (10).png" alt="Kolbasa">
+                        <h2 class="font-[700] text-[18px] pt-[8px] pb-[18px]">159,99 ₽</h2>
+                        <p class="text-[16px] font-[400] w-[200px] pt-[26px] pb-[8px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ
+                            GS12»</p>
+                        <img class="pb-[8px]" src="img/rating.png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                            В корзину</button>
+                    </div>
+                    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="bg-[white] p-[8px]">
+                        <img src="img/img (2).png" alt="Kolbasa">
+                        <h2 class="font-[700] text-[18px] pt-[8px] pb-[18px]">49,39 ₽</h2>
+                        <p class="text-[16px] font-[400] w-[200px] pt-[26px] pb-[8px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ
+                            GS12»</p>
+                        <img class="pb-[8px]" src="img/rating.png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                            В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container max-w-[100%] w-[85%] mx-auto">
+                <div class="flex justify-between items-center pt-[80px] ">
+                    <h2 class="text-[36px] font-[700] font-['Rubik']">Покупали раньше</h2>
+                    <a data-aos="fade-down"
+                        class="text-[16px] font-[400] flex gap-[8px] text-[#757371] hover:text-[18px] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200 "
+                        href="">Все покупки <img class="w-[24px] h-[24px]"
+                            src="img/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+                </div>
+                <div class="flex justify-between items-center pt-[40px] pb-[120px]">
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="bg-[white] p-[8px]">
+                        <img src="img/img (3).png" alt="Kolbasa">
+                        <h2 class="font-[700] text-[18px] pt-[8px] pb-[18px]">77,99 ₽</h2>
+                        <p class="text-[16px] font-[400] w-[200px] pt-[26px] pb-[8px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ
+                            GS12»</p>
+                        <img class="pb-[8px]" src="img/rating.png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                            В корзину</button>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="bg-[white] p-[8px]">
+                        <img src="img/image (10).png" alt="Kolbasa">
+                        <h2 class="font-[700] text-[18px] pt-[8px] pb-[18px]">159,99 ₽</h2>
+                        <p class="text-[16px] font-[400] w-[200px] pt-[26px] pb-[8px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ
+                            GS12»</p>
+                        <img class="pb-[8px]" src="img/rating.png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                            В корзину</button>
+                    </div>
+                    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="bg-[white] p-[8px]">
+                        <img src="img/image (11).png" alt="Kolbasa">
+                        <h2 class="font-[700] text-[18px] pt-[8px] pb-[18px]">599,99 ₽</h2>
+                        <p class="text-[16px] font-[400] w-[200px] pt-[26px] pb-[8px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ
+                            GS12»</p>
+                        <img class="pb-[8px]" src="img/rating.png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none ease-in-out duration-200 hover:ease-in-out hover:duration-200">
+                            В корзину</button>
+                    </div>
+
+                    <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" class="bg-[white] p-[8px]">
+                        <img src="img/img (2).png" alt="Kolbasa">
+                        <h2 class="font-[700] text-[18px] pt-[8px] pb-[18px]">49,39 ₽</h2>
+                        <p class="text-[16px] font-[400] w-[200px] pt-[26px] pb-[8px]">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ
+                            GS12»</p>
+                        <img class="pb-[8px]" src="img/rating.png" alt="rate">
+                        <button
+                            class="items-center flex justify-center text-center font-[400] text-[16px] text-[#70C05B] border-[#70C05B] border-[1px] w-[256px] py[18px] hover:w-[257px] hover:text-[17px]
+                            hover:font-[450] hover:text-[white] hover:bg-[#FF6633] hover:border-none ease-in-out duration-200 hover:ease-in-out hover:duration-200  ">
+                            В корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container max-w-[100%] w-[85%] mx-auto">
+                <h2 class="text-[36px] font-[700] pt-[120px]">Специальные предложения</h2>
+                <div class=" flex gap-[40px] items-center pt-[40px] pb-[120px] mx-auto justify-center">
+                    <div class="w-[584px] flex gap-[21px] items-center bg-[#FCD5BA] pl-[40px] rounded-[4px] ">
+                        <div class="w-[258px] flex flex-col gap-[6px]">
+                            <h2 class="text-[24px] font-[700]">Оформите карту «Северяночка»</h2>
+                            <p class="text-[16px] font-[400]">И получайте бонусы при покупке в магазинах и на сайте</p>
+                        </div>
+                        <img src="img/Карта лояльности-10 1.png" alt="Card">
+                    </div>
+                    <div class=" w-[584px] flex gap-[21px] items-center bg-[#E5FFDE] py-[15px] pl-[40px] rounded-[4px]">
+                        <div class="w-[258px] flex flex-col gap-[6px]">
+                            <h2 class="text-[24px] font-[700]">Покупайте акционные товары</h2>
+                            <p class="text-[16px] font-[400]">И получайте вдвое больше бонусов</p>
+                        </div>
+                        <img class="w-[193px] h-[196px]" src="img/73 1.png" alt="Korzinka">
+
+                        <img src="img/+.png" class="top-[0]" alt="plus">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container max-w-[100%] w-[85%] mx-auto">
+                <h2 class="text-[36px] font-[700] font-[Rubik]">Наши магазины</h2>
+                <div class="flex gap-[24px] items-center pt-[40px] pb-[24px]">
+                    <button data-aos="flip-up"
+                        class="text-[#606060] text-[12px] font-[400] font-[Rubik] rounded-[5px] py-[8px] w-[97px] hover:text-[white] hover:bg-[#70C05B] hover:text-[13px] hover:rounded-[3px] hover:w-[100px] hover:py[10px] ease-in-out duration-200 hover:ease-in-out hover:duration-200  ">п.Щельяюр</button>
+                    <button data-aos="flip-up"
+                        class="text-[#606060] text-[12px] font-[400] font-[Rubik] rounded-[5px] py-[8px] w-[97px] hover:text-[white] hover:bg-[#70C05B] hover:text-[13px] hover:rounded-[3px] hover:w-[100px] hover:py[10px] ease-in-out duration-200 hover:ease-in-out hover:duration-200  ">д.Вертеп</button>
+                    <button data-aos="flip-up"
+                        class="text-[#606060] text-[12px] font-[400] font-[Rubik] rounded-[5px] py-[8px] w-[97px] hover:text-[white] hover:bg-[#70C05B] hover:text-[13px] hover:rounded-[3px] hover:w-[100px] hover:py[10px] ease-in-out duration-200 hover:ease-in-out hover:duration-200  ">с.Краснобор</button>
+                    <button data-aos="flip-up"
+                        class="text-[#606060] text-[12px] font-[400] font-[Rubik] rounded-[5px] py-[8px] w-[97px] hover:text-[white] hover:bg-[#70C05B] hover:text-[13px] hover:rounded-[3px] hover:w-[100px] hover:py[10px] ease-in-out duration-200 hover:ease-in-out hover:duration-200  ">д.Диюр</button>
+                </div>
+                <iframe class="pb-[120px]"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3542598.2232924183!2d52.38470355160747!3d64.30695905078507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4475b8cd9d17ae4b%3A0x102a3a583f194c0!2z0KDQtdGB0L8uINCa0L7QvNC4LCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2s!4v1734094065224!5m2!1sru!2s"
+                    width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </section>
+        <section>
+            <div class="container max-w-[100%] w-[85%] mx-auto">
+                <div class="flex justify-between items-center pt-[120px]">
+                    <h2 class="text-[36px] font-[700] ">Статьи</h2>
+                    <a data-aos="fade-down"
+                        class="text-[16px] font-[400] flex gap-[8px] text-[#757371] hover:text-[18px] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200  "
+                        href="">Все статьи <img class="w-[24px] h-[24px]"
+                            src="img/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
+                </div>
+                <div class="flex justify-between items-center pt-[40px] pb-[80px]">
+
+                    <div data-aos="zoom-in-up" class=" flex justify-between items-center pt-[40px] pb-[80px]">
+                        <div class="bg-[white] w-[376px] pb-[15px] flex flex-col px-[8px] gap-[10px]">
+                            <img src="img/image 5.png" alt="Doctor">
+                            <p class="text-[12px] font-[400] text-[#8F8F8F]">05.03.2021</p>
+                            <h3 class="font-[700] text-[18px] w-[356px]">Режим использования масок и перчаток на
+                                территории
+                                магазинов</h3>
+                            <p class="text-[16px] font-[400] w-[356px]">Подробная информация о режимах использования
+                                масок и
+                                перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.</p>
+                            <button
+                                class="bg-[#E5FFDE] items-start w-[150px] text-center py-[8px]  text-[#70C05B] font-[400] text-[16px] rounded-[5px] hover:text-[17px] hover:fotn-[450] hover:bg-[#70C05B] hover:text-[white]
+                           hover:rounded-[3px] ease-in-out duration-200 hover:ease-in-out hover:duration-200">Подробнее</button>
+                        </div>
+
+                    </div>
+                    <div data-aos="zoom-in-up" class=" flex justify-between items-center pt-[40px] pb-[80px]">
+                        <div class="bg-[white] w-[376px] pb-[15px] flex flex-col px-[8px] gap-[10px]">
+                            <img src="img/image 5 (1).png" alt="Garden">
+                            <p class="text-[12px] font-[400] text-[#8F8F8F]">05.03.2021</p>
+                            <h3 class="font-[700] text-[18px] w-[356px]">Весеннее настроение для каждой
+                            </h3>
+                            <p class="text-[16px] font-[400] w-[356px]">8 Марта – это не просто Международный женский
+                                день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.</p>
+                            <button
+                                class="bg-[#E5FFDE] items-start w-[150px] text-center py-[8px]  text-[#70C05B] font-[400] text-[16px] rounded-[5px] hover:text-[17px] hover:fotn-[450] hover:bg-[#70C05B] hover:text-[white]
+                           hover:rounded-[3px] ease-in-out duration-200 hover:ease-in-out hover:duration-200">Подробнее</button>
+                        </div>
+
+
+                    </div>
+                    <div data-aos="zoom-in-up" class=" flex justify-between items-center pt-[40px] pb-[80px]">
+                        <div class="bg-[white] w-[376px] pb-[15px] flex flex-col px-[8px] gap-[10px]">
+                            <img src="img/image 5 (2).png" alt="Garden">
+                            <p class="text-[12px] font-[400] text-[#8F8F8F]">22.02.2020</p>
+                            <h3 class="font-[700] text-[18px] w-[356px]">ЗОЖ или ФАСТФУД. А вы на чьей стороне?
+                                Голосуем!
+                            </h3>
+                            <p class="text-[16px] font-[400] w-[356px]">Голосуйте за любимые категории, выбирайте
+                                категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!</p>
+                            <button
+                                class="bg-[#E5FFDE] items-start w-[150px] text-center py-[8px]  text-[#70C05B] font-[400] text-[16px] rounded-[5px] hover:text-[17px] hover:fotn-[450] hover:bg-[#70C05B] hover:text-[white]
+                               hover:rounded-[3px] ease-in-out duration-200 hover:ease-in-out hover:duration-200">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="bg-[#F9F4E2]">
+        <div class="container max-w-[100%] w-[85%] mx-auto">
+            <div class="flex justify-between items-center pt-[24px] pb-[58px] ">
+                <img src="img/logo (2).png" alt="Logo">
+                <ul class="flex items-center gap-[40px]">
+                    <li><a class="text-[12px] font-[400] text-[#414141] hover:text-[14px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+                            href="">О компании</a></li>
+                    <li><a class="text-[12px] font-[400] text-[#414141] hover:text-[14px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+                            href="">Контакты</a></li>
+                    <li><a class="text-[12px] font-[400] text-[#414141] hover:text-[14px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+                            href="">Вакансии</a></li>
+                    <li><a class="text-[12px] font-[400] text-[#414141] hover:text-[14px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+                            href="">Статьи</a></li>
+                    <li><a class="text-[12px] font-[400] text-[#414141] hover:text-[14px] hover:font-[500] hover:text-[black] ease-in-out duration-200 hover:ease-in-out hover:duration-200"
+                            href="">Политика обработки персональных данных</a></li>
+                </ul>
+                <ul class="flex items-center gap-[16px]">
+                    <li><img class="w-[24px] h[24px]"
+                            src="https://img.freepik.com/premium-vector/instagram-vector-logo-icon-social-media-logotype_901408-392.jpg?semt=ais_hybrid"
+                            alt="Insagram"></li>
+                    <li><img class="w-[24px] h[24px]"
+                            src="https://w7.pngwing.com/pngs/814/360/png-transparent-vk-chat-logo-social-social-media-social-media-logos-icon-thumbnail.png"
+                            alt="VK"></li>
+                    <li><img class="w-[30px] h-[23px]" src="https://banner2.cleanpng.com/20180713/huy/aawa951nk.webp"
+                            alt="Facebook"></li>
+                    <li><img class="w-[24px] h[24px]"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Odnoklassniki.svg/1200px-Odnoklassniki.svg.png"
+                            alt="OK"></li>
+                </ul>
+                <div class="flex items-center gap-[8px]">
+                    <img class="w-[24px] h-[24px] " src="img/call_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="Call">
+                    <p class="text-[16px] font-[400]">8 800 777 33 33</p>
+                </div>
+            </div>
+        </div>
+    </footer>   
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#70C05B',
+                }
+            }
+        }
+    }
+</script>
+
+</html>
